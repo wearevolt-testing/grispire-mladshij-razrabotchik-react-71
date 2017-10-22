@@ -13,6 +13,7 @@ This app can manage products, customers, invoices.
 ### Run production
 1. npm run prod
 2. open [localhost:8000](http://localhost:8000)
+
 production files placed in /public
 
 ### Stack
