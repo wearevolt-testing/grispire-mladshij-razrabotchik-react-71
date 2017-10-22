@@ -3,7 +3,6 @@
 
 # production
 /build
-/webpack.production.config.js
 
 # misc
 *.sqlite
