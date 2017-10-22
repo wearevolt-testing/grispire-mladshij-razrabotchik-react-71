@@ -1,19 +1,19 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, Redirect } from 'react-router-dom';
 import 'react-select/dist/react-select.css';
 
 import CustomersContainer from './Customers/CustomersContainer';
 import ProductsPage from './Products/ProductsContainer';
 import NavBar from './Common/NavBar';
-import InvoiceCreatePage from './Invoices/InvoiceCreatePage';
-import InvoicesPage from './Invoices/InvoicesPage';
-import InvoiceEditPage from './Invoices/InvoiceEditPage';
+import InvoiceCreatePage from './Invoices/InvoiceCreatePageContainer';
+import InvoicesPage from './Invoices/InvoicesPageContainer';
+import InvoiceEditPage from './Invoices/InvoiceEditPageContainer';
 
 export const App = () => (
   <div>
     <NavBar />
     <Switch>
-      <Route exact path="/" component={InvoicesPage} />
+      <Route exact path="/" render={() => <Redirect to="/invoices" />} />
       <Route exact path="/invoices" component={InvoicesPage} />
       <Route path="/invoices/сreate" component={InvoiceCreatePage} />
       <Route
