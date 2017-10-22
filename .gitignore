@@ -1,0 +1,12 @@
+# dependencies
+/node_modules
+
+# production
+/build
+/webpack.production.config.js
+
+# misc
+*.sqlite
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
